@@ -7,6 +7,31 @@ MOTOROLA, MOTO, MOTOROLA SOLUTIONS, and MOTOTRBO are trademarks or registered tr
 
 This project is an independent work and is not affiliated with, endorsed by, or sponsored by Motorola Solutions, Inc.
 
+# Legacy CPS1 `.ctb` XML decoder
+
+Independent, read-only Python tool to inspect legacy Motorola CPS1/16 `.ctb`
+archives using **key material supplied locally by the user**. Not affiliated
+with, endorsed by, or supported by Motorola Solutions.
+
+The repository contains **no proprietary keys, Motorola binaries, codeplug
+samples, entitlement responses, or license-generation functionality**.
+
+## Requirements
+
+- Python 3.9 or later
+- `python3 -m pip install cryptography`
+
+## Use without a configuration file
+
+```bash
+python3 ctb_inspect_decode_xml.py YOUR_ARCHIVE.ctb --prompt-keys
+```
+
+The script requests the Base64-encoded AES key and IV through masked prompts.
+These values are not placed in your shell command history or written to output.
+Use only key material you are authorized to use. The script does **not** recover
+keys from Motorola products, and does **not** validate entitlement rights.
+
 # Python CPS1 config preparation
 
 ****Original project: https://github.com/george-hopkins/codeplug-prepare *****
