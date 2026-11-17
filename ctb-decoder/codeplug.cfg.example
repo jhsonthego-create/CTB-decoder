@@ -1,0 +1,6 @@
+# TEMPLATE ONLY. NO KEYS ARE INCLUDED.
+# If you are authorized to possess the key material, fill in your own values
+# and save a local file named codeplug.cfg. Do not commit it to Git.
+[codeplug]
+key = REPLACE_WITH_YOUR_OWN_BASE64_AES_KEY
+iv = REPLACE_WITH_YOUR_OWN_BASE64_IV
